@@ -32,7 +32,6 @@ const Comics = () => {
             if(search === '') return;
       
             const comicsPerPage = 15;
-            const privateApiKey = 'f0b97ebde26b5f01066513ea4194e7b9050e2ac9';
             const publicApiKey = 'bfb572428e14738d6a355e43b005f42a';
             const hash = '3321e625715b4f61c8ceca26799c5ac8';
             const url = `http://gateway.marvel.com/v1/public/comics?title=${search}&limit=${comicsPerPage}&ts=1&apikey=${publicApiKey}&hash=${hash}&offset=${actualpage}`;
@@ -69,7 +68,7 @@ const Comics = () => {
             <Nav />
                 <div>
                    <Search setSearch={setSearch} />
-                   <Superheros />
+                   <Superheros setSearch={setSearch}/>
                 </div>
             </HeaderWrapper>
             <div>

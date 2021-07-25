@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 
-const Button = styled.a`
+const Button = styled.button`
    text-align: center;
    width: 15rem;
    font-weight: 700;
+   font-size: 2rem;
    text-transform: uppercase;
    font-family: 'Oswald', sans-serif;
    color: var(--black);

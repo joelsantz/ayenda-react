@@ -32,14 +32,26 @@ const NavWrapper = styled.nav`
 `;
 
 
-const Superheros = () => {
+const Superheros = ({setSearch}) => {
 
     return (
         <NavWrapper>
-                 <ButtonHero className="spiderman-btn" >Spider-Man</ButtonHero> 
-                 <ButtonHero className="wolverine-btn">Wolverine</ButtonHero> 
-                 <ButtonHero className="hulk-btn">Hulk</ButtonHero> 
-                 <ButtonHero className="thor-btn">Thor</ButtonHero> 
+                 <ButtonHero className="spiderman-btn"
+                    value = 'Spider-man'
+                    onClick = {e => setSearch(e.target.value)}
+                 >Spider-Man</ButtonHero> 
+                 <ButtonHero className="wolverine-btn"
+                    value = 'Wolverine'
+                    onClick = {e => setSearch(e.target.value)}
+                 >Wolverine</ButtonHero> 
+                 <ButtonHero className="hulk-btn"
+                    value = 'Hulk'
+                    onClick = {e => setSearch(e.target.value)}
+                 >Hulk</ButtonHero> 
+                 <ButtonHero className="thor-btn"
+                    value = 'Thor'
+                    onClick = {e => setSearch(e.target.value)}
+                 >Thor</ButtonHero> 
         </NavWrapper>
     );
 }
