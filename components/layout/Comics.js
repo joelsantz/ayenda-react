@@ -53,7 +53,7 @@ const Comics = () => {
             const comicsPerPage = 15;
             const publicApiKey = 'bfb572428e14738d6a355e43b005f42a';
             const hash = '3321e625715b4f61c8ceca26799c5ac8';
-            const url = `http://gateway.marvel.com/v1/public/comics?title=${search}&limit=${comicsPerPage}&ts=1&apikey=${publicApiKey}&hash=${hash}&offset=${actualpage}`;
+            const url = `https://gateway.marvel.com/v1/public/comics?title=${search}&limit=${comicsPerPage}&ts=1&apikey=${publicApiKey}&hash=${hash}&offset=${actualpage}`;
 
             const response = await fetch(url);
             const result = await response.json();
