@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 import ButtonHero from './ButtonHero';
 
 const NavWrapper = styled.nav`
@@ -30,7 +28,6 @@ const NavWrapper = styled.nav`
         color: var(--blue);
     }
 `;
-
 
 const Superheros = ({setSearch}) => {
 

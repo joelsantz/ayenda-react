@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 
 
 const ComicCard = styled.div`
@@ -10,7 +9,6 @@ const ComicCard = styled.div`
     color: var(--gray2);
     margin: 3rem 3rem;
     background-color: white;
-    /* box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.10); */
     border: 4px solid var(--gray);
 
     &:hover {

@@ -19,7 +19,6 @@ const Layout = (props) => {
                         --green: #27ae60;
                         --blue: #3498db;
                     }
-
                     html {
                         font-size: 62.5%;
                         box-sizing: boder-box;

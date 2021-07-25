@@ -1,5 +1,4 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 const UlWrapper = styled.ul`
@@ -25,8 +24,6 @@ const LinkLi = styled.a`
         transition: 0.3s;
     }
 `;
-
-
 
 const Nav = () => {
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 import Error from './Error';
 
 const SearchWrapper = styled.div`
