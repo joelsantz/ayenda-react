@@ -18,16 +18,16 @@ const Superheros = () => {
 
     return (
         <NavWrapper>
-            <Link href = "/">
+            <Link href = "/spiderman">
                  <ButtonHero>Spider-Man</ButtonHero> 
             </Link>
-            <Link href = "/">
+            <Link href = "/wolverine">
                  <ButtonHero>Wolverine</ButtonHero> 
             </Link>
-            <Link href = "/">
+            <Link href = "/hulk">
                  <ButtonHero>Hulk</ButtonHero> 
             </Link>
-            <Link href = "/">
+            <Link href = "/thor">
                  <ButtonHero>Thor</ButtonHero> 
             </Link>
         </NavWrapper>

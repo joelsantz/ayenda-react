@@ -14,6 +14,13 @@ const Button = styled.a`
    &::last-of-type {
        margin-right: 0;
    }
+
+   &:hover {
+       cursor: pointer;
+       box-shadow: 8px 8px 0px -1px rgba(232,232,232,1);
+       transition: 0.2s;
+
+   }
 `;
 
 export default Button;

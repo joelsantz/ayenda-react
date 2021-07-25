@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
+import Error from './Error';
 
 const SearchWrapper = styled.div`
     form {
@@ -31,14 +32,44 @@ const SearchWrapper = styled.div`
     }
 `;
 
-const Search = () => {
+const Search = ({setSearch}) => {
+
+    const [ term, setTerm ] = useState('');
+    const [ error, setError ] = useState(false);
+
+    const enterKey = (e) => {
+        if (e.key === 'Enter') {
+          searchComic(e);
+        }
+      }
+
+    const searchComic = e => {
+        e.preventDefault();
+
+        //validate
+        if(term.trim() === '') {
+            setError(true);
+            return;
+        }
+
+        // send search term to main component
+        setSearch(term);
+    }
 
     return (
         <SearchWrapper>
-            <form>
+            <form
+                onSubmit = {searchComic}
+            >
                 <button type="submit" className="fas fa-search" ></button>
-                <input type="text" placeholder="Your favourite comic..."/>
+                <input 
+                    type = "text" 
+                    placeholder = "Your favourite comic..."
+                    onChange = { e => setTerm(e.target.value) }
+                    onKeyPress = {enterKey}
+                />
             </form>
+            {error ? <Error message = 'Oops, you forgot type something! 😬' /> : null}
         </SearchWrapper>
     );
 }
