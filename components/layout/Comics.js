@@ -114,6 +114,7 @@ const Comics = () => {
                 )}
             </FooterWrapper>
         </header>
+        
     );
 }
 
