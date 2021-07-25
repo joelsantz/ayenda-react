@@ -24,7 +24,7 @@ const ComicCard = styled.div`
 
 const WrapperImg = styled.div`
     background-image: url('/static/img/back.jpg');
-    background-size: contain;
+    background-size: cover;
     width: auto;
 `;
 
