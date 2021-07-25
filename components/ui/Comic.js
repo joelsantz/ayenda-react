@@ -10,18 +10,21 @@ const ComicCard = styled.div`
     color: var(--gray2);
     margin: 3rem 3rem;
     background-color: white;
-    box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.10);
+    /* box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.10); */
+    border: 4px solid var(--gray);
 
     &:hover {
         cursor: pointer;
-        box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.15);
-        transition: 0.3s;
+        transition: 0.5s;
+        box-shadow: 12px 12px 0px -1px rgba(44, 62, 80,0.2);
+        border: 4px solid var(--gray2);
     }
 
 `;
 
 const WrapperImg = styled.div`
-    background-color: var(--black);
+    background-image: url('/static/img/back.jpg');
+    background-size: contain;
     width: auto;
 `;
 
