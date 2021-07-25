@@ -5,12 +5,18 @@ import { css } from '@emotion/react';
 
 const ComicCard = styled.div`
     text-align: left;
-    width: 35rem;
+    width: 33rem;
     height: 50rem;
     color: var(--gray2);
-    margin: 2rem 2rem;
+    margin: 3rem 3rem;
     background-color: white;
-    border: 3px solid var(--black);
+    box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.10);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.15);
+        transition: 0.3s;
+    }
 
 `;
 
@@ -38,11 +44,15 @@ const WrapperContent = styled.div`
         color: var(--gray);
     }
 `;
+const PriceP = styled.p`
+    line-height: 1rem;
+`;
 
 const Comic = ({comic}) => {
 
     // Destructuring variables
-    const { title, creators, thumbnail} = comic;
+    const { title, creators, thumbnail, prices} = comic;
+    const [{price}] = prices;
     const { path, extension } = thumbnail;
     const {items:[{name}]} = creators;
 
@@ -54,7 +64,8 @@ const Comic = ({comic}) => {
                 </WrapperImg>
                 <WrapperContent>
                     <h3>{title}</h3>
-                    <p>{name}</p> 
+                    <p>{name}</p>
+                    <PriceP>${price}</PriceP> 
                 </WrapperContent>
             </ComicCard>
         </div>

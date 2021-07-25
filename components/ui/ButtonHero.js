@@ -6,10 +6,11 @@ const Button = styled.a`
    font-weight: 700;
    text-transform: uppercase;
    font-family: 'Oswald', sans-serif;
-   color: white;
+   color: var(--black);
    margin: 1rem 2rem;
    padding: .8rem 2rem;
-   background-color: var(--black);
+   background-color: white;
+   border: 4px solid var(--black);
 
    &::last-of-type {
        margin-right: 0;

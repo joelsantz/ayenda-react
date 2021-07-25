@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Comics from './Comics';
 import { Global, css } from '@emotion/react';
 import Head from 'next/head';
 
@@ -12,13 +12,18 @@ const Layout = (props) => {
                     :root {
                         --black: #1e272e;
                         --red: #f53b57;
+                        --red2: #e74c3c;
                         --gray: #95afc0;
                         --gray2: #535c68;
+                        --yellow: #f1c40f;
+                        --green: #27ae60;
+                        --blue: #3498db;
                     }
 
                     html {
                         font-size: 62.5%;
                         box-sizing: boder-box;
+                        margin-right: 2rems;
                     }
                     *, *:before, *:after {
                         box-sizing: inherit;
@@ -48,7 +53,7 @@ const Layout = (props) => {
                 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet" />
             </Head>
 
-            <Header />
+            <Comics />
             <main>
                 {props.children}
             </main>
