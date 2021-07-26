@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const UlWrapper = styled.ul`
+const UlWrapper = styled.div`
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -9,8 +9,9 @@ const UlWrapper = styled.ul`
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 3rem 0rem;
+    margin: 3rem 0;
 `;
+
 
 const LinkLi = styled.a`
     font-family: 'Oswald', sans-serif;
