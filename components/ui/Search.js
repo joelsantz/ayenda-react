@@ -53,6 +53,7 @@ const Search = ({setSearch}) => {
 
         // send search term to main component
         setSearch(term);
+        setError(false);
     }
 
     return (

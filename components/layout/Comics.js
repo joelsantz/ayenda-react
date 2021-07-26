@@ -104,13 +104,13 @@ const Comics = () => {
                     <ButtonPagination
                         type="button"
                         onClick={previousPage}
-                    ><i class="fas fa-chevron-left"></i></ButtonPagination>
+                    ><i className="fas fa-chevron-left"></i></ButtonPagination>
                 )}
                 {(actualpage === totalpages) ? null : (
                     <ButtonPagination
                         type="button"
                         onClick={nextPage}
-                    ><i class="fas fa-chevron-right"></i></ButtonPagination>
+                    ><i className="fas fa-chevron-right"></i></ButtonPagination>
                 )}
             </FooterWrapper>
         </header>
